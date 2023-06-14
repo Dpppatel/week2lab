@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="12" failures="8" errors="0" time="1.475">
-  <testsuite name="Random key cipher" errors="0" failures="8" skipped="0" timestamp="2023-06-14T20:02:18" time="1.328" tests="12">
-    <testcase classname="Random key cipher can encode" name="Random key cipher can encode" time="0.002">
+<testsuites name="jest tests" tests="12" failures="8" errors="0" time="2.166">
+  <testsuite name="Random key cipher" errors="0" failures="8" skipped="0" timestamp="2023-06-14T20:53:23" time="1.899" tests="12">
+    <testcase classname="Random key cipher can encode" name="Random key cipher can encode" time="0.004">
     </testcase>
-    <testcase classname="Random key cipher can decode" name="Random key cipher can decode" time="0.004">
+    <testcase classname="Random key cipher can decode" name="Random key cipher can decode" time="0.006">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;aaaaaaaaaa&quot;
@@ -23,7 +23,7 @@ Received: &quot;dddddddddd&quot;
     at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
     at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Random key cipher is reversible" name="Random key cipher is reversible" time="0.001">
+    <testcase classname="Random key cipher is reversible" name="Random key cipher is reversible" time="0.004">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;abcdefghij&quot;
@@ -45,9 +45,9 @@ Received: &quot;dddddddddd&quot;
     </testcase>
     <testcase classname="Random key cipher key is made only of lowercase letters" name="Random key cipher key is made only of lowercase letters" time="0.001">
     </testcase>
-    <testcase classname="Substitution cipher can encode" name="Substitution cipher can encode" time="0.001">
+    <testcase classname="Substitution cipher can encode" name="Substitution cipher can encode" time="0.002">
     </testcase>
-    <testcase classname="Substitution cipher can decode" name="Substitution cipher can decode" time="0.002">
+    <testcase classname="Substitution cipher can decode" name="Substitution cipher can decode" time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;aaaaaaaaaa&quot;
@@ -67,7 +67,7 @@ Received: &quot;abcdefghij&quot;
     at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
     at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Substitution cipher is reversible" name="Substitution cipher is reversible" time="0.001">
+    <testcase classname="Substitution cipher is reversible" name="Substitution cipher is reversible" time="0">
     </testcase>
     <testcase classname="Substitution cipher can double shift encode" name="Substitution cipher can double shift encode" time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
@@ -109,7 +109,7 @@ Received: &quot;zyxwvutsrq&quot;
     at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
     at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Substitution cipher can wrap on decode" name="Substitution cipher can wrap on decode" time="0.001">
+    <testcase classname="Substitution cipher can wrap on decode" name="Substitution cipher can wrap on decode" time="0.002">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;zzzzzzzzzz&quot;
@@ -130,10 +130,11 @@ Received: &quot;ayabcdefgh&quot;
     at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
     </testcase>
     <testcase classname="Substitution cipher can encode messages longer than the key" name="Substitution cipher can encode messages longer than the key" time="0.001">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;charAt&apos;)
-    at charAt (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:77:21)
-    at Cipher.convertKey [as encode] (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:19:21)
-    at Object.encode (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:63:30)
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;iboaqcnecbfcr&quot;
+Received: &quot;qbwaecbfcchcj&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:63:55)
     at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
@@ -149,10 +150,11 @@ Received: &quot;ayabcdefgh&quot;
     at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
     </testcase>
     <testcase classname="Substitution cipher can decode messages longer than the key" name="Substitution cipher can decode messages longer than the key" time="0">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;charAt&apos;)
-    at charAt (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:77:21)
-    at Cipher.convertKey [as decode] (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:46:21)
-    at Object.decode (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:67:30)
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;iamapandabear&quot;
+Received: &quot;abcabcabcabca&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:67:55)
     at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
