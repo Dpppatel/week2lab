@@ -4,46 +4,66 @@
 //
 
 export class Cipher {
-  constructor(key = 'd') {
-    // todo: implement
-    this.key = key.toLowerCase;
+  constructor(key = 'dddddddddd') {
+    this._key = key.toLowerCase();
   }
 
   encode(rawData) {
-    // todo: implement
-    this.rawData = rawData;
+    let userKey = this._key;
     let encodedData = '';
-    let convertValue = convertKey(this.key);
-    for(let i = 0; i < this.rawData.length; i++){
-      let asciiVal = this.rawData.charAt(i);
-      if(!asciiVal >= 122){     // make sure to remove a problem that might cause it to go out of the 97-122 range of asciiVal;
-        asciiVal += convertValue;
-      } else {
-        asciiVal = 97 + convertValue;
+    // while(userKey.length < rawData.length){
+    //   userKey = userKey.repeat(1);
+    // }
+    for(let i = 0; i < rawData.length; i++){
+      let char = convertKey(rawData[i]);
+      let keyChar = convertKey(userKey[i]);// make sure the key is same length before this
+      let difference = Math.abs(char - keyChar);
+      let encodedCharCode = rawData.charCodeAt(i);
+      let encodedChar = encodedCharCode + difference;  
+      if(encodedChar > 122){
+        encodedChar = 97 + (encodedChar - 122);
+        encodedData += String.fromCharCode(encodedChar);
+      } else if(encodedChar < 97){
+        encodedChar = 122 - Math.abs(encodedChar - 97);
+        encodedData += String.fromCharCode(encodedChar);
+      } else{
+        encodedData += String.fromCharCode(encodedChar);
       }
-      encodedData += String.fromCharCode(asciiVal);
     }
+
+    return encodedData;
   }
 
   decode(encriptedData) {
-    // todo: implement
-    this.encriptedData = encriptedData;
+    let userKey = this._key;
     let decodedData = '';
-    let convertValue = convertKey(this.key);
-    for(let i = 0; i < this.rawData.length; i++){
-      let asciiVal = this.rawData.charAt(i);
-      if(!asciiVal <= 97){           // make sure to remove a problem that might cause it to go out of the 97-122 range of asciiVal;
-        asciiVal -= convertValue;
+    // while(userKey.length < encriptedData.length){
+    //   userKey = userKey.repeat(1);
+    // }
+
+    for(let i = 0; i < encriptedData.length; i++){
+      let char = convertKey(encriptedData[i]);
+      let keyChar = convertKey(userKey[i]);// make sure the key is same length before this
+      let difference = Math.abs(char - keyChar);
+      let encodedCharCode = encriptedData.charCodeAt(i);
+      let encodedChar = encodedCharCode - difference; 
+      if(encodedChar > 122){
+        encodedChar = 97 + (encodedChar - 122);
+        decodedData += String.fromCharCode(encodedChar);
+      } else if(encodedChar < 97){
+        encodedChar = 122 - Math.abs(encodedChar - 97);
+        decodedData += String.fromCharCode(encodedChar);
       } else {
-        asciiVal = 122 - convertValue;
+        decodedData += String.fromCharCode(encodedChar);
       }
-      decodedData += String.fromCharCode(asciiVal);
     }
+    return decodedData;
   }
 
   get key() {
     // todo: implement
-    return this.charKey;
+    const userKey = this._key;
+    return userKey;
   }
 }
 
@@ -53,90 +73,61 @@ export class Cipher {
 
 
 //function to convert from char to number for further use
-function convertKey(character){
-  character = character.charAt(0);
-  let returnValue = null;
-  switch (character) {
+const convertKey = function (character){
+  switch (character.charAt()) {
     case 'a':
-      returnValue = 0;
-      break;
+      return  0;
     case 'b':
-      returnValue = 1;
-      break;
+      return  1;
     case 'c':
-      returnValue = 2;
-      break;
+      return  2;
     case 'd':
-      returnValue = 3;
-      break;
+      return  3;
     case 'e':
-      returnValue = 4;
-      break;
+      return  4;
     case 'f':
-      returnValue = 5;
-      break;
+      return  5;
     case 'g':
-      returnValue = 6;
-      break;
+      return  6;
     case 'h':
-      returnValue = 7;
-      break;
+      return  7;
     case 'i':
-      returnValue = 8;
-      break;
+      return  8;
     case 'j':
-      returnValue = 9;
-      break;
+      return  9;
     case 'k':
-      returnValue = 10;
-      break;
+      return  10;
     case 'l':
-      returnValue = 11;
-      break;
+      return  11;
     case 'm':
-      returnValue = 12;
-      break;
+      return  12;
     case 'n':
-      returnValue = 13;
-      break;
+      return  13;
     case 'o':
-      returnValue = 14;
-      break;
+      return  14;
     case 'p':
-      returnValue = 15;
-      break;
+      return  15;
     case 'q':
-      returnValue = 16;
-      break;
+      return  16;
     case 'r':
-      returnValue = 17;
-      break;
+      return  17;
     case 's':
-      returnValue = 18;
-      break;
+      return  18;
     case 't':
-      returnValue = 19;
-      break;
+      return  19;
     case 'u':
-      returnValue = 20;
-      break;
+      return  20;
     case 'v':
-      returnValue = 21;
-      break;
+      return  21;
     case 'w':
-      returnValue = 22;
-      break;
+      return  22;
     case 'x':
-      returnValue = 23
-      break;
+      return  23
     case 'y':
-      returnValue = 24;
-      break;
+      return  24;
     case 'z':
-      returnValue = 25;
-      break;
+      return  25;
     default:
       return null;
   }
-  return returnValue;
 }

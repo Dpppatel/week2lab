@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="12" failures="8" errors="0" time="1.475">
+  <testsuite name="Random key cipher" errors="0" failures="8" skipped="0" timestamp="2023-06-14T20:02:18" time="1.328" tests="12">
+    <testcase classname="Random key cipher can encode" name="Random key cipher can encode" time="0.002">
+    </testcase>
+    <testcase classname="Random key cipher can decode" name="Random key cipher can decode" time="0.004">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;aaaaaaaaaa&quot;
+Received: &quot;dddddddddd&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:15:56)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Random key cipher is reversible" name="Random key cipher is reversible" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;abcdefghij&quot;
+Received: &quot;dddddddddd&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:22:53)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Random key cipher key is made only of lowercase letters" name="Random key cipher key is made only of lowercase letters" time="0.001">
+    </testcase>
+    <testcase classname="Substitution cipher can encode" name="Substitution cipher can encode" time="0.001">
+    </testcase>
+    <testcase classname="Substitution cipher can decode" name="Substitution cipher can decode" time="0.002">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;aaaaaaaaaa&quot;
+Received: &quot;abcdefghij&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:39:41)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Substitution cipher is reversible" name="Substitution cipher is reversible" time="0.001">
+    </testcase>
+    <testcase classname="Substitution cipher can double shift encode" name="Substitution cipher can double shift encode" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;qayaeaagaciai&quot;
+Received: &quot;iamapandabear&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:49:65)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Substitution cipher can wrap on encode" name="Substitution cipher can wrap on encode" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;zabcdefghi&quot;
+Received: &quot;zyxwvutsrq&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:55:41)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Substitution cipher can wrap on decode" name="Substitution cipher can wrap on decode" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;zzzzzzzzzz&quot;
+Received: &quot;ayabcdefgh&quot;
+    at Object.toEqual (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:59:41)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Substitution cipher can encode messages longer than the key" name="Substitution cipher can encode messages longer than the key" time="0.001">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;charAt&apos;)
+    at charAt (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:77:21)
+    at Cipher.convertKey [as encode] (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:19:21)
+    at Object.encode (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:63:30)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Substitution cipher can decode messages longer than the key" name="Substitution cipher can decode messages longer than the key" time="0">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;charAt&apos;)
+    at charAt (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:77:21)
+    at Cipher.convertKey [as decode] (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.js:46:21)
+    at Object.decode (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\simple-cipher.spec.js:67:30)
+    at Promise.then.completed (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:293:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\utils.js:226:10)
+    at _callCircusTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:297:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:233:3)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:135:9)
+    at _runTestsForDescribeBlock (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:130:9)
+    at run (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\run.js:68:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Access Point\Desktop\Summer\work\week2 lab\week2lab\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
