@@ -16,7 +16,7 @@ export class Cipher {
     let convertValue = convertKey(this.key);
     for(let i = 0; i < this.rawData.length; i++){
       let asciiVal = this.rawData.charAt(i);
-      if(!asciiVal >= 122){     // make sure to remove a problem that might cause it to go out of the 97-122 range of asciiVal;
+      if(!asciiVal+convertValue >= 122){     // make sure to remove a problem that might cause it to go out of the 97-122 range of asciiVal;
         asciiVal += convertValue;
       } else {
         asciiVal = 97 + convertValue;
@@ -32,7 +32,7 @@ export class Cipher {
     let convertValue = convertKey(this.key);
     for(let i = 0; i < this.rawData.length; i++){
       let asciiVal = this.rawData.charAt(i);
-      if(!asciiVal <= 97){           // make sure to remove a problem that might cause it to go out of the 97-122 range of asciiVal;
+      if(!asciiVal-convertValue <= 97){           // make sure to remove a problem that might cause it to go out of the 97-122 range of asciiVal;
         asciiVal -= convertValue;
       } else {
         asciiVal = 122 - convertValue;
