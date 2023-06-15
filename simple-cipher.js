@@ -9,16 +9,22 @@ export class Cipher {
   }
 
   encode(rawData) {
-    const letterAval = 'a'.charCodeAt(0);
-    const letterZval = 'z'.charCodeAt(0);
+    const letterZval = 'z'.charCodeAt(0); // 122
     let encodedData = '';
     
+    
     for(let i = 0; i < rawData.length; i++){
-      let letter = rawData.charCodeAt(i) - letterAval;
+      let letter = rawData.charCodeAt(i);
+      const shiftKey = this._key.charCodeAt(i) - 97;
+
+      letter += shiftKey; //key
       
-      if(letter < 0){
-        letter += letterZval;
-      }
+      if(letter > letterZval){
+        // Wrap
+        letter -= 26; // number of alphabets
+      } 
+
+      //append to create a string
       encodedData += String.fromCharCode(letter);
     }
 
@@ -27,23 +33,27 @@ export class Cipher {
 
   decode(encriptedData) {
     const letterAval = 'a'.charCodeAt(0);
-    const letterZval = 'z'.charCodeAt(0);
     let decodedData = '';
     
+    
     for(let i = 0; i < encriptedData.length; i++){
-      let letter = encriptedData.charCodeAt(i) - letterAval;
+      let letter = encriptedData.charCodeAt(i);
+      const shiftKey = this._key.charCodeAt(i) - 97;
+
+      letter -= shiftKey;
       
-      if(letter < 0){
-        letter += letterZval;
+      if(letter < letterAval){
+        letter += 26;
       }
+
       decodedData += String.fromCharCode(letter);
     }
+
     return decodedData;
   }
 
   get key() {
     // todo: implement
-    const userKey = this._key;
-    return userKey;
+    return this._key;
   }
 }
