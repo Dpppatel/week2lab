@@ -4,8 +4,8 @@
 //
 
 export class Cipher {
-  constructor(key = 'dddddddddd') {
-    this._key = key.toLowerCase().repeat(5);
+  constructor(key = getRand()) {
+    this._key = key.toLowerCase().repeat(10);
   }
 
   encode(rawData) {
@@ -56,4 +56,10 @@ export class Cipher {
     // todo: implement
     return this._key;
   }
+}
+
+
+function getRand(){
+  const randChar =  Math.random() * (97 - 122) + 97;
+  return String.fromCharCode(randChar);
 }
